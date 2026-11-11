@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Children Xplanet empowers young people to research, design, and build a greener, cooler, more resilient Houston.">
+<title>Children Xplanet | Young Minds. Better Cities.</title>
+<style>
+:root{--ink:#17352d;--green:#176b4b;--lime:#c9e86a;--mint:#eaf4e9;--cream:#fbfaf4;--orange:#e88b50;--muted:#60736b;--line:#dce6dc;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit} .wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(251,250,244,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.04em;font-size:1.22rem}.brand-mark{width:38px;height:38px;border-radius:13px;background:var(--green);color:white;display:grid;place-items:center;font-size:21px}.navlinks{display:flex;gap:24px;align-items:center;font-size:.9rem;font-weight:650}.navlinks a{text-decoration:none;color:#496057}.navlinks a:hover{color:var(--green)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:white!important;padding:11px 18px;border-radius:999px;text-decoration:none;font-weight:750;border:0;cursor:pointer}mark{background:var(--lime);color:var(--ink);padding:0 4px;border-radius:4px}.menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink)}
+.hero{padding:92px 0 78px;background:radial-gradient(circle at 80% 15%,#dcecb7 0,transparent 30%),linear-gradient(135deg,#edf5e9,#fbfaf4 65%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:54px;align-items:center}.eyebrow{font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;font-weight:850;color:var(--green)}h1{font-size:clamp(3rem,6.6vw,5.7rem);line-height:.99;letter-spacing:-.065em;margin:18px 0 24px;max-width:760px}h1 em{font-style:normal;color:var(--green)}.hero p{font-size:1.14rem;color:#52675e;max-width:650px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.button.secondary{background:transparent;color:var(--green)!important;border:1px solid #a8bdb0}.hero-art{min-height:390px;border-radius:34px;background:linear-gradient(180deg,transparent 45%,#0e2a1f99),url("https://images.pexels.com/photos/5896695/pexels-photo-5896695.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover;position:relative;overflow:hidden;display:flex;align-items:end;justify-content:center;padding:32px;color:white;box-shadow:0 22px 55px #234b3020}.hero-art-label{position:relative;z-index:3;width:100%;display:flex;justify-content:space-between;align-items:end;font-weight:800}.hero-art-label span:last-child{font-size:.8rem;font-weight:600;opacity:.9;text-align:right}
+section{padding:86px 0}.section-head{max-width:760px;margin-bottom:38px}.section-head h2{font-size:clamp(2.1rem,4vw,3.35rem);line-height:1.08;letter-spacing:-.055em;margin:10px 0 15px}.section-head p{color:var(--muted);font-size:1.04rem}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}.mission-card{background:var(--green);color:white;padding:34px;border-radius:25px}.mission-card h3{font-size:1.5rem;margin:0 0 10px}.mission-card p{color:#e3eee6}.vision-card{padding:10px 0}.vision-card h3{font-size:1.5rem;margin:0 0 10px}.vision-card p{color:var(--muted)}.symbol{font-size:1.65rem}
+.soft{background:var(--mint)}.project-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 44px}.project-list li{padding:18px 0;border-top:1px solid var(--line)}.project-list .tag{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--green);font-weight:850}.project-list h3{font-size:1.08rem;line-height:1.25;margin:8px 0 5px}.project-list h3 a{color:inherit;text-decoration:none}.project-list h3 a:hover{text-decoration:underline}.project-list p{font-size:.9rem;color:var(--muted);margin:0}
+.muted{color:var(--muted);font-size:.9rem}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.person{padding:23px;background:white;border:1px solid var(--line);border-radius:18px}.avatar{width:54px;height:54px;border-radius:18px;background:var(--mint);display:grid;place-items:center;font-size:1.5rem;overflow:hidden}.avatar img{width:100%;height:100%;object-fit:cover}.person h3{font-size:1rem;margin:14px 0 3px}.person .role{font-size:.78rem;color:var(--green);font-weight:800}.person p{font-size:.85rem;color:var(--muted)}.person-link{display:inline-block;margin-top:10px;font-size:.8rem;font-weight:750;color:var(--green);text-decoration:none}.person-link:hover{text-decoration:underline}
+.join{background:#173f32;color:white}.join .section-head p{color:#d1e2d7}
+footer{padding:42px 0;background:#102f26;color:#d9e7dc}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{color:#d9e7dc;text-decoration:none;font-size:.85rem}.footnote{font-size:.78rem;color:#a9c0b2;margin-top:25px}.social-links{display:flex;gap:10px;margin-top:22px}.social-links[hidden]{display:none}.social-links a{width:38px;height:38px;border-radius:12px;background:#ffffff14;display:grid;place-items:center;font-size:1.05rem;text-decoration:none;transition:background .15s}.social-links a:hover{background:#ffffff2b}.contact{display:flex;gap:8px 22px;flex-wrap:wrap;margin-top:20px;font-size:.88rem}.contact a{color:#d9e7dc;text-decoration:none}.contact a:hover{text-decoration:underline}
+@media(max-width:850px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:var(--cream);padding:20px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.hero-grid,.two-col{grid-template-columns:1fr}.hero-art{min-height:310px}.project-list{grid-template-columns:1fr}}
+@media(max-width:560px){section{padding:62px 0}.hero{padding:65px 0}.team-grid{grid-template-columns:1fr}.footer-row{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="brand-mark">✳</span> Children Xplanet</a>
+    <button class="menu" aria-label="Open navigation" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+    <nav class="navlinks">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="tree_challenge.html">Tree Challenge</a><a href="#team">Our Team</a><a class="nav-cta" href="#get-involved">Get involved</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">A youth-powered <mark>civic innovation</mark> nonprofit · Houston, Texas</div>
+      <h1>Young minds.<br><em>Better cities.</em></h1>
+      <p>We bring young people together to understand real urban challenges, test practical solutions, and make our communities greener, cooler, healthier, and more resilient—while giving them the AI literacy, creativity, and problem-solving skills to thrive in a rapidly changing world.</p>
+      <div class="actions"><a class="button" href="#projects">Explore our projects ↗</a><a class="button secondary" href="#get-involved">Become part of the change</a></div>
+    </div>
+    <div class="hero-art" role="img" aria-label="Young students collaborating on a laptop on a city street">
+      <div class="hero-art-label"><span>Small actions.<br>Lasting urban impact.</span><span>CHILDREN<br>PLANET · CITY · FUTURE</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head" style="max-width:920px;margin-left:auto;margin-right:auto;text-align:center"><div class="eyebrow">Who we are</div><h2>A better city is something we can build together.</h2><p>Children Xplanet is a civic innovation organization that gives children and young people meaningful opportunities to study their communities and contribute to solving the problems that shape everyday life.</p></div>
+    <div class="mission-card" style="max-width:920px;margin:0 auto;text-align:center"><div class="symbol">🌱</div><h3>Our mission</h3><p>To empower young people to improve their cities and their planet through environmental action, scientific inquiry, engineering, technology, and community collaboration—while nurturing the creativity, empathy, and judgment that make us human. We turn local challenges into hands-on learning experiences that prepare children for the AI age and create measurable public benefits.</p></div>
+  </div>
+</section>
+
+<section class="soft" id="projects">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Our project portfolio</div><h2>Houston is our classroom. The city is our laboratory.</h2><p>Our projects connect environmental improvement with civic technology. Some begin with a tree or a water tank. Others begin with a map, a dataset, or a question about how city infrastructure works.</p></div>
+    <ul class="project-list">
+      <li><div class="tag">First flagship initiative</div><h3><a href="tree_challenge.html">Urban Greening &amp; Passive Tree Irrigation Challenge</a></h3><p>Students design low-cost irrigation systems to keep young trees alive—combining urban forestry, engineering, and a community competition.</p></li>
+      <li><div class="tag">Urban infrastructure</div><h3>Sewer System Health Map</h3><p>A public map of sewer asset conditions, failures, and maintenance needs.</p></li>
+      <li><div class="tag">Climate resilience</div><h3>Houston Flooding & Drainage Observatory</h3><p>Maps recurring flood spots and drainage issues to target green infrastructure.</p></li>
+      <li><div class="tag">Urban climate</div><h3>Neighborhood Heatmap & Shade Equity</h3><p>Measures how canopy, pavement, and land cover affect neighborhood temperatures.</p></li>
+      <li><div class="tag">Public information</div><h3>Houston Road Health Portal</h3><p>A public map of potholes, road conditions, and repair history.</p></li>
+      <li><div class="tag">Mobility and safety</div><h3>Traffic & Safer Streets Lab</h3><p>Studies congestion, dangerous intersections, and safer routes for pedestrians and cyclists.</p></li>
+      <li><div class="tag">Water innovation</div><h3>Water Reuse & Smart Irrigation</h3><p>Prototypes low-cost rainwater harvesting and efficient watering for urban greening.</p></li>
+      <li><div class="tag">Healthy neighborhoods</div><h3>Urban Food Trees & Community Harvest</h3><p>Explores publicly accessible fruit trees for shade, food, and community gathering.</p></li>
+      <li><div class="tag">Public realm</div><h3>Neighborhood Beauty & Biodiversity</h3><p>Studies native plants, pollinator habitats, and ways to make public spaces welcoming.</p></li>
+      <li><div class="tag">Open civic data</div><h3>Houston Urban Data Atlas</h3><p>A long-term platform combining maps and student research on urban challenges.</p></li>
+      <li><div class="tag">Future innovation</div><h3>Student Solutions Incubator</h3><p>An open call for students to propose and test new local solutions.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">People behind the work</div><h2>A team that turns curiosity into public value.</h2><p>Children Xplanet is guided by a board of directors committed to environmental action, scientific inquiry, and community collaboration.</p></div>
+    <div class="team-grid">
+      <article class="person"><div class="avatar"><img src="https://images.pexels.com/photos/8424943/pexels-photo-8424943.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Junlin Gu"></div><h3>Junlin Gu</h3><div class="role">Board Member</div><p>A co-founder of Children Xplanet, Junlin helps set the organization's direction and build the partnerships that expand opportunity for young people.</p><a class="person-link" href="https://www.linkedin.com/in/junlin-gu" target="_blank" rel="noopener">LinkedIn ↗</a></article>
+      <article class="person"><div class="avatar"><img src="https://images.pexels.com/photos/33261955/pexels-photo-33261955.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Hugh Dai"></div><h3>Hugh Dai</h3><div class="role">Board Member</div><p>Hugh brings experience in technology and community innovation, helping Children Xplanet turn student ideas into practical civic projects.</p><a class="person-link" href="https://www.linkedin.com/in/hugh-dai" target="_blank" rel="noopener">LinkedIn ↗</a></article>
+      <article class="person"><div class="avatar"><img src="https://images.pexels.com/photos/32517390/pexels-photo-32517390.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Chloe Wei"></div><h3>Chloe Wei</h3><div class="role">Board Member</div><p>Chloe is passionate about education and environmental stewardship, supporting programs that connect classroom learning with real neighborhood impact.</p><a class="person-link" href="https://www.linkedin.com/in/chloe-wei" target="_blank" rel="noopener">LinkedIn ↗</a></article>
+    </div>
+    <p class="muted" style="margin-top:20px">Additional roles may include a board of directors, student mentors, engineering and university advisors, educators, safety coordinators, community liaisons, and project-specific volunteers. Board governance and staff or volunteer responsibilities should be described accurately and kept distinct.</p>
+    <div class="actions" style="margin-top:24px"><a class="button" href="student_participation.html">View student participation ↗</a></div>
+  </div>
+</section>
+
+<section class="join" id="get-involved">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow" style="color:var(--lime)">Take part</div><h2>Bring your questions. Bring your skills. Help improve Houston.</h2><p>We welcome students, parents, teachers, engineers, universities, neighborhood groups, and anyone who wants to turn ideas into practical community improvements.</p></div>
+    <div class="actions"><a class="button" href="mailto:childrenxplanet@gmail.com">Start a conversation</a><a class="button secondary" style="color:white!important;border-color:#b8d1c1" href="#projects">Explore project opportunities</a></div>
+    <div class="mission-card" style="margin-top:30px;max-width:920px"><h3>Sponsorship opportunities</h3><p style="color:#e3eee6">Businesses, universities, community organizations, and individual donors can support our projects through funding, materials and equipment, project sites, datasets, or mentor expertise. Sponsor a tree-planting site, a student competition, or a specific project—every contribution helps students turn ideas into real neighborhood impact.</p><div class="actions" style="margin-top:14px"><a class="button" style="background:#fff;color:var(--green)!important" href="mailto:childrenxplanet@gmail.com?subject=Sponsorship%20inquiry">Become a sponsor</a></div></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-row"><a class="brand" href="#home" style="color:white"><span class="brand-mark">✳</span> Children Xplanet</a><div class="footer-links"><a href="#about">About</a><a href="#projects">Projects</a><a href="student_participation.html">Student Participation</a><a href="#team">Team</a><a href="#get-involved">Get involved</a></div></div>
+    <div class="social-links" hidden><a href="#" aria-label="YouTube" title="YouTube">▶️</a><a href="#" aria-label="Facebook" title="Facebook">📘</a><a href="#" aria-label="RedNote" title="RedNote">📕</a><a href="#" aria-label="WeChat" title="WeChat">💬</a></div>
+    <div class="contact"><a href="mailto:childrenxplanet@gmail.com">childrenxplanet@gmail.com</a><span>3903 Bellaire Blvd Ste E, Houston, TX</span></div>
+    <div class="footnote">Children Xplanet · Houston, Texas · A nonprofit organization working toward a greener, cooler, more resilient future.</div>
+  </div>
+</footer>
+</body>
+</html>
